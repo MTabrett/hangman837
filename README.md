@@ -6,11 +6,11 @@ Hangman is a classic word guessing game where the computer randomly choices a wo
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it.
 
 ## Table of Contents
-1. Introduction (#project title)
-2. Project Description (#project description)
-3. Installation Instructions (#installation instructions)
-4. Usage Instructions (#Usage instructions)
-5. License Information
+1. Introduction (# Project Title)
+2. Project Description (## Project Description)
+3. Installation Instructions (## Installation instructions)
+4. Usage Instructions (## Usage instructions)
+5. License Information (## License information)
 
 ## Project Description
 In the classic children's game of Hangman, a player's objective is to identify a secret word of which only the number of letters is originally revealed. In each round, the player guesses a letter of the alphabet: if it is present in the secret word, all instances are revealed; otherwise one of the hangman's body parts is drawn in on a gibbet. The game ends in a win if the word is entirely revealed by correct guesses, and ends in a loss if the hangman's body is completely revealed instead. To assist the player, a visible record of all guessed letters is typically maintained.
