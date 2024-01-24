@@ -29,6 +29,16 @@ Built in sections -
         - Checked whether the player_guess was in the random_selected_word
         - Created functions to help run the checks - check if valid & is in the random_selected_word
 
+    Part 3 - Milestone_4.py - converting to OOP paradigm.
+        - Create the Game class
+        - Create Hangman class
+        - Create __init__ method passing word_list and num_lives=5 parameters
+        - Initialise following attributes -  randon_word, word_guessed, num_letters, num_lives, word_list and list_of_guesses
+        - Create methods for running the checks of input valid and guess is or not in word
+        - Define what happens if the letter is in the word using for-loop and if statements
+        - Define what happens if the letter is NOT in the word
+
+
 ## Installation instructions
     To install the game, you need to have Python 3 installed on your system. You can download it from [here](https://www.python.org/downloads/).
 

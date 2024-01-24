@@ -17,13 +17,13 @@ random_selected_word = random.choice(available_word_list)
 # print(random_selected_word)
 
 # Using the input function, ask for entry of a single letter.
-player_guess = input("Please enter a single letter: ")
+players_guess = input("Please enter a single letter: ")
 
 # # Assign the user input to a variable called guess.
 # guess = letter
 
 # Create an if statement that checks if the length of the input is equal to 1 and the input is alphabetical.
-if len(player_guess) == 1 and player_guess.isalpha():
+if len(players_guess) == 1 and players_guess.isalpha():
   
   # In the body of the if statement, print a message that says, "Good guess!".
   print("Good guess!")
