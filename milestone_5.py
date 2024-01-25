@@ -7,12 +7,16 @@ class Hangman:
     def __init__(self, available_word_list, number_lives_start:int=5):
         self.random_selected_word = random.choice(available_word_list)
         self.word_guessed = ["_" for _ in self.random_selected_word]
-        self.number_letters = len(set(self.random_selected_word))
+        print(*self.word_guessed)
+        self.number_letters = len(self.random_selected_word)
+        print(f"The mystery word has {self.number_letters} characters")
         self.number_lives = number_lives_start
         self.word_list = available_word_list
         self.list_of_guesses = []
-    
-    # Define the check_guess method and convert to lowercase
+        
+        # print(*game.word_guessed)
+
+    # Define the check_guess method
     def check_guess_correct(self, players_guess):
 
         players_guess = players_guess.lower()
@@ -30,7 +34,7 @@ class Hangman:
                     self.word_guessed[i] = players_guess
 
                     self.number_letters -= 1
-        
+         # Create an else block for when the guess is not in the word
         else:
 
             self.number_lives -= 1
@@ -64,11 +68,37 @@ class Hangman:
 
                 self.list_of_guesses.append(players_guess)
                 print(players_guess)
+                print(*self.word_guessed)
                 # Break out of the loop
                 break
 
-# Create an instance of the Hangman class
-play_game = Hangman(available_word_list)
+# Define the play_game function that takes word_list as a parameter
+def play_game(word_list):
 
-# Call the ask_for_input method.
-play_game.ask_player_for_input()
+    number_lives = 5
+
+    game = Hangman(word_list, number_lives)
+
+    while True:
+
+        if game.number_lives == 0:
+            print("You lost!")
+            break
+
+        # Check if the num_letters is greater than 0
+        elif game.number_letters > 0:
+
+            # Call the ask_for_input method
+            game.ask_player_for_input()
+
+        # If the num_lives is not 0 and the num_letters is not greater than 0
+        else:
+
+            # Print a message saying 'Congratulations. You won the game!'
+            print("Congratulations. You won the game!")
+
+            # Break out of the loop
+            break
+
+play_game(available_word_list)
+

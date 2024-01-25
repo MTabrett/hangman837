@@ -14,6 +14,21 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ## Project Description
 In the classic children's game of Hangman, a player's objective is to identify a secret word of which only the number of letters is originally revealed. In each round, the player guesses a letter of the alphabet: if it is present in the secret word, all instances are revealed; otherwise one of the hangman's body parts is drawn in on a gallows. The game ends in a win if the word is entirely revealed by correct guesses, and ends in a loss if the hangman's body is completely revealed instead. To assist the player, a visible record of all guessed letters is typically maintained.
+
+## Installation instructions
+    To install the game, you need to have Python 3 installed on your system. You can download it from [here](https://www.python.org/downloads/).
+
+Then, you can clone this repository or download the zip file. To clone the repository, run the following command:
+
+''' bash
+git clone https://github.com/MTabrett/hangman_game_project.git
+import random
+run milestone_2.py to start the game
+
+## Usage instructions
+    To play the game, navigate to the project directory and run the milestone_5.py file:
+
+## File structure of the project
 Built in sections -
     Part 1 - Milestone_2.py
         - Defined the list of possible words
@@ -38,19 +53,9 @@ Built in sections -
         - Define what happens if the letter is in the word using for-loop and if statements
         - Define what happens if the letter is NOT in the word
 
-
-## Installation instructions
-    To install the game, you need to have Python 3 installed on your system. You can download it from [here](https://www.python.org/downloads/).
-
-Then, you can clone this repository or download the zip file. To clone the repository, run the following command:
-
-''' bash
-git clone https://github.com/MTabrett/hangman_game_project.git
-import random
-run milestone_2.py to start the game
-
-## Usage instructions
-    To play the game, navigate to the project directory and run the milestone_2.py file:
+    Part 4 - Mileston_5.py - Putting it all together
+        - Created a function (play_game) that will run all the code to play the game
+        - Finished code - play game 
 
 
 ## License information
