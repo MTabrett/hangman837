@@ -10,7 +10,8 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 2. [Project Description](##project-description)
 3. [Installation Instructions](##installation-instructions)
 4. [Usage Instructions](##usage-instructions)
-5. [License Information](##license-information)
+5. [Future Upgrades](##future-enhancements)
+6. [License Information](##license-information)
 
 ## Project Description
 In the classic children's game of Hangman, a player's objective is to identify a secret word of which only the number of letters is originally revealed. In each round, the player guesses a letter of the alphabet: if it is present in the secret word, all instances are revealed; otherwise one of the hangman's body parts is drawn in on a gallows. The game ends in a win if the word is entirely revealed by correct guesses, and ends in a loss if the hangman's body is completely revealed instead. To assist the player, a visible record of all guessed letters is typically maintained.
@@ -58,6 +59,10 @@ Part 4 - Mileston_5.py - Putting it all together
         - Created a function (play_game) that will run all the code to play the game
         - Finished code - play game 
 
+## Future Enhancements
+1. Add the gallows to be drawn as the guesses come in.
+2. Connect the secret word to a database of different words.
+3. Tidy up some of the instructions.
 
 ## License information
 MIT license
